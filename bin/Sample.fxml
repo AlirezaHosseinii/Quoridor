@@ -1,26 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
-   <center>
-      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-         <children>
-            <HBox prefHeight="100.0" prefWidth="200.0" />
-            <Button contentDisplay="CENTER" mnemonicParsing="false" text="Start ">
-               <font>
-                  <Font size="49.0" />
-               </font>
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-            </Button>
-         </children>
-      </HBox>
-   </center>
-</BorderPane>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Button fx:id="NewGameButton" layoutX="170.0" layoutY="85.0" mnemonicParsing="false" onAction="#StartGame" prefHeight="64.0" prefWidth="259.0" text="New single game">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="TournamnetButton" layoutX="170.0" layoutY="153.0" mnemonicParsing="false" onAction="#StartTournamnet" prefHeight="64.0" prefWidth="259.0" text="New tournament">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="LoadButton" layoutX="169.0" layoutY="226.0" mnemonicParsing="false" onAction="#OpenLoadPage" prefHeight="50.0" prefWidth="259.0" text="Load">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Label fx:id="WelcomeTitle" layoutX="52.0" layoutY="14.0" prefHeight="71.0" prefWidth="522.0" text="Welcome to Quoridor">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Button fx:id="ExitButton" contentDisplay="CENTER" layoutX="170.0" layoutY="292.0" mnemonicParsing="false" onAction="#Exit" prefHeight="64.0" prefWidth="259.0" text="Exit">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
